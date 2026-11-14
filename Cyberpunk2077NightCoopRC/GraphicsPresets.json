@@ -1,0 +1,1795 @@
+{
+  "version": 152,
+  "Low": [
+    {
+      "group_name": "/gameplay/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/presets",
+      "options": [
+        {
+          "name": "QuickPresets",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Low",
+          "index": 1
+        },
+        {
+          "name": "ResolutionScaling",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "FSR2",
+          "index": 2
+        },
+        {
+          "name": "DLSS_D",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR2",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Auto",
+          "index": 0
+        },
+        {
+          "name": "FSR4_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR3_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "XESS_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "DynamicResolutionScaling",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FrameGeneration",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Off",
+          "index": 0
+        },
+        {
+          "name": "DLSSFrameGen",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "TextureQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/raytracing",
+      "options": [
+        {
+          "name": "RayTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedReflections",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedSunShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLocalShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLighting",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Off",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Medium",
+            "Ultra",
+            "Psycho"
+          ]
+        },
+        {
+          "name": "RayTracedPathTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedPathTracingForPhotoMode",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/advanced",
+      "options": [
+        {
+          "name": "ContactShadows",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "FacialTangentUpdates",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "Anisotropy",
+          "type": "int_list",
+          "is_dynamic": false,
+          "value": 4,
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            1,
+            4,
+            8,
+            16
+          ]
+        },
+        {
+          "name": "ShadowMeshQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LocalShadowsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "DistantShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "VolumetricFogResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "VolumetricCloudsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MaxDynamicDecals",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "ScreenSpaceReflectionsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High",
+            "Ultra",
+            "Insane"
+          ]
+        },
+        {
+          "name": "SubsurfaceScatteringQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "AmbientOcclusion",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "ColorPrecision",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "GlobaIlluminationRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MirrorQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LODPreset",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/basic",
+      "options": [
+        {
+          "name": "FilmGrain",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "ChromaticAberration",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "DepthOfField",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "MotionBlur",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Off",
+          "index": 0,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "Vignette",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        }
+      ]
+    }
+  ],
+  "Medium": [
+    {
+      "group_name": "/gameplay/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/presets",
+      "options": [
+        {
+          "name": "QuickPresets",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Medium",
+          "index": 2
+        },
+        {
+          "name": "ResolutionScaling",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "FSR2",
+          "index": 2
+        },
+        {
+          "name": "DLSS_D",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR2",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Auto",
+          "index": 0
+        },
+        {
+          "name": "FSR4_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR3_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "XESS_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "DynamicResolutionScaling",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FrameGeneration",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Off",
+          "index": 0
+        },
+        {
+          "name": "DLSSFrameGen",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "TextureQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/raytracing",
+      "options": [
+        {
+          "name": "RayTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedReflections",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedSunShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLocalShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLighting",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Off",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Medium",
+            "Ultra",
+            "Psycho"
+          ]
+        },
+        {
+          "name": "RayTracedPathTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedPathTracingForPhotoMode",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/advanced",
+      "options": [
+        {
+          "name": "ContactShadows",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "FacialTangentUpdates",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "Anisotropy",
+          "type": "int_list",
+          "is_dynamic": false,
+          "value": 8,
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            1,
+            4,
+            8,
+            16
+          ]
+        },
+        {
+          "name": "ShadowMeshQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LocalShadowsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "DistantShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "VolumetricFogResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "VolumetricCloudsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MaxDynamicDecals",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "ScreenSpaceReflectionsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High",
+            "Ultra",
+            "Insane"
+          ]
+        },
+        {
+          "name": "SubsurfaceScatteringQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "AmbientOcclusion",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "ColorPrecision",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "GlobaIlluminationRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MirrorQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LODPreset",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 0,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/basic",
+      "options": [
+        {
+          "name": "FilmGrain",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "ChromaticAberration",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "DepthOfField",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "MotionBlur",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Low",
+          "index": 1,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "Vignette",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        }
+      ]
+    }
+  ],
+  "High": [
+    {
+      "group_name": "/gameplay/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/presets",
+      "options": [
+        {
+          "name": "QuickPresets",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "High",
+          "index": 3
+        },
+        {
+          "name": "ResolutionScaling",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "FSR2",
+          "index": 2
+        },
+        {
+          "name": "DLSS_D",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR2",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Quality",
+          "index": 1
+        },
+        {
+          "name": "FSR4_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR3_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "XESS_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "DynamicResolutionScaling",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FrameGeneration",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Off",
+          "index": 0
+        },
+        {
+          "name": "DLSSFrameGen",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "TextureQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/raytracing",
+      "options": [
+        {
+          "name": "RayTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedReflections",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedSunShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLocalShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLighting",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Off",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Medium",
+            "Ultra",
+            "Psycho"
+          ]
+        },
+        {
+          "name": "RayTracedPathTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedPathTracingForPhotoMode",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/advanced",
+      "options": [
+        {
+          "name": "ContactShadows",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "FacialTangentUpdates",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "Anisotropy",
+          "type": "int_list",
+          "is_dynamic": false,
+          "value": 16,
+          "index": 3,
+          "default_index": 0,
+          "values": [
+            1,
+            4,
+            8,
+            16
+          ]
+        },
+        {
+          "name": "ShadowMeshQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LocalShadowsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "DistantShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "VolumetricFogResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "VolumetricCloudsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MaxDynamicDecals",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "ScreenSpaceReflectionsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High",
+            "Ultra",
+            "Insane"
+          ]
+        },
+        {
+          "name": "SubsurfaceScatteringQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "AmbientOcclusion",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "ColorPrecision",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "GlobaIlluminationRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MirrorQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LODPreset",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "Medium",
+          "index": 1,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/basic",
+      "options": [
+        {
+          "name": "FilmGrain",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "ChromaticAberration",
+          "type": "bool",
+          "value": false,
+          "default_value": true
+        },
+        {
+          "name": "DepthOfField",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "MotionBlur",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "Vignette",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        }
+      ]
+    }
+  ],
+  "Ultra": [
+    {
+      "group_name": "/gameplay/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/presets",
+      "options": [
+        {
+          "name": "QuickPresets",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Ultra",
+          "index": 4
+        },
+        {
+          "name": "ResolutionScaling",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "FSR2",
+          "index": 2
+        },
+        {
+          "name": "DLSS_D",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR2",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Quality",
+          "index": 1
+        },
+        {
+          "name": "FSR4_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FSR3_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "XESS_FrameGeneration",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "DynamicResolutionScaling",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "FrameGeneration",
+          "type": "string_list",
+          "is_dynamic": true,
+          "value": "Off",
+          "index": 0
+        },
+        {
+          "name": "DLSSFrameGen",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "TextureQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/raytracing",
+      "options": [
+        {
+          "name": "RayTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedReflections",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedSunShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLocalShadows",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedLighting",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Off",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Medium",
+            "Ultra",
+            "Psycho"
+          ]
+        },
+        {
+          "name": "RayTracedPathTracing",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        },
+        {
+          "name": "RayTracedPathTracingForPhotoMode",
+          "type": "bool",
+          "value": false,
+          "default_value": false
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/advanced",
+      "options": [
+        {
+          "name": "ContactShadows",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "FacialTangentUpdates",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "Anisotropy",
+          "type": "int_list",
+          "is_dynamic": false,
+          "value": 16,
+          "index": 3,
+          "default_index": 0,
+          "values": [
+            1,
+            4,
+            8,
+            16
+          ]
+        },
+        {
+          "name": "ShadowMeshQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LocalShadowsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 0,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "CascadedShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "DistantShadowsResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "VolumetricFogResolution",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Ultra",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "VolumetricCloudsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Ultra",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MaxDynamicDecals",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Ultra",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "ScreenSpaceReflectionsQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "Ultra",
+          "index": 4,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High",
+            "Ultra",
+            "Insane"
+          ]
+        },
+        {
+          "name": "SubsurfaceScatteringQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "AmbientOcclusion",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 3,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "ColorPrecision",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 1,
+          "default_index": 0,
+          "values": [
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "GlobaIlluminationRange",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 0,
+          "default_index": 0,
+          "values": [
+            "High",
+            "Ultra"
+          ]
+        },
+        {
+          "name": "MirrorQuality",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 0,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        },
+        {
+          "name": "LODPreset",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/performance",
+      "options": [
+        {
+          "name": "CrowdDensity",
+          "type": "name_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 2,
+          "values": [
+            "Low",
+            "Medium",
+            "High"
+          ]
+        }
+      ]
+    },
+    {
+      "group_name": "/graphics/basic",
+      "options": [
+        {
+          "name": "FilmGrain",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "ChromaticAberration",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "DepthOfField",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        },
+        {
+          "name": "MotionBlur",
+          "type": "string_list",
+          "is_dynamic": false,
+          "value": "High",
+          "index": 2,
+          "default_index": 1,
+          "values": [
+            "Off",
+            "Low",
+            "High"
+          ]
+        },
+        {
+          "name": "Vignette",
+          "type": "bool",
+          "value": true,
+          "default_value": true
+        }
+      ]
+    }
+  ]
+}
